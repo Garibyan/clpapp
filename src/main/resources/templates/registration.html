@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+</head>
+<body>
+<div class="container my-5">
+    <h3> Registration</h3>
+    <div class="card">
+        <div class="card-body">
+            <div class="col-md-10">
+                <form name="userForm" th:action="@{/registration}" method="post">
+                    <div class="row">
+                        <div class="form-group col-md-8">
+                            <label for="firstName" class="col-form-label">First Name</label>
+                            <input type="text" class="form-control"
+                                   id="firstName" placeholder="First Name" />
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="lastName" class="col-form-label">Last Name</label>
+                            <input type="text" class="form-control"
+                                   id="lastName" placeholder="Last Name" />
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="middleName" class="col-form-label">Middle Name</label>
+                            <input type="text" class="form-control"
+                                   id="middleName" placeholder="Middle Name" />
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="username" class="col-form-label">Username</label>
+                            <input type="text" class="form-control"
+                                   id="username" placeholder="Username" />
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="password" class="col-form-label">Password</label>
+                            <input type="text" class="form-control"
+                                   id="password" placeholder="Password" />
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="address" class="col-form-label">Address</label>
+                            <input type="text" class="form-control"
+                                   id="address" placeholder="Address" />
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="birthdate" class="col-form-label">Birth Date</label>
+                            <input type="date" class="form-control"
+                                   id="birthdate" placeholder="Birth Date" />
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="pid" class="col-form-label">Pid</label>
+                            <input type="text" class="form-control"
+                                   id="pid" placeholder="Pid" />
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="pid" class="col-form-label">ADMIN</label>
+                            <input type="checkbox" class="form-control" name="roles" value="ADMIN"/>
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="pid" class="col-form-label">USER</label>
+                            <input type="checkbox" class="form-control" name="roles" value="USER"/>
+                        </div>
+
+
+<!--                        ADMIN <input type="checkbox" name="roles" value="ADMIN"/>-->
+<!--                        USER  <input type="checkbox" name="roles" value="USER" />-->
+                            <hr/>
+
+
+                        <div class="col-md-6">
+                            <input type="submit" class="btn btn-primary" value="join">
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+<!--    name : <input type="text" name="username" id="username"/><br/>-->
+<!--    password : <input type="text" name="password" id="password"/><br/>-->
+<!--    firstName : <input type="text" name="firstname" id="firstName"/><br/>-->
+<!--    lastName : <input type="text" name="lastname" id="lastName"/><br/>-->
+<!--    middleName : <input type="text" name="middlename" id="middleName"/><br/>-->
+<!--    address : <input type="text" name="address" id="address"/><br/>-->
+<!--    pid : <input type="text" name="pid" id="pid"/><br/>-->
+<!--    birthDate : <input type="text" name="birthdate" id="birthDate"/><br/>-->
+
+
+<!--Registration-->
+<!--<form name="userForm" th:action="@{/registration}" method="post">-->
+
+
+<!--    <br/>-->
+<!--    ADMIN <input type="checkbox" name="roles" value="ADMIN"/> |-->
+<!--    USER  <input type="checkbox" name="roles" value="USER" />-->
+<!--    <hr/>-->
+<!--    <input type="submit" value="join" />-->
+<!--</form>-->

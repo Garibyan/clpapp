@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <meta charset="UTF-8" />
+    <title>Main</title>
+</head>
+<body>
+<span sec:authentication="name"></span>
+<span sec:authentication="principal.authorities"></span>
+
+
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="Sign Out" />
+</form>
+<a href="/swagger-ui.html">swagger</a>
+<a href="userstable.html">users</a>
+<a href="list-user.html">users</a>
+</body>
+</html>
+
